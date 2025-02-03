@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat UOL</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <div class="overlay hidden" id="myOverlay"></div>
+    
+    <div class="content">
+
+        <header class="top-bar">
+            <div>
+                <img src="assets/logo.png" class="logo">
+            </div>
+
+            <div>
+                <img src="assets/pessoas.png" class="pessoas" onclick="abrirNav()">
+            </div>            
+        </header>
+
+
+        <div class="container-mensagens"></div>
+
+        <div id="mySidenav" class="sidenav">
+            <div class="sidenav-content">
+                <p class="p1">Escolha um contato para enviar mensagem:</p>
+
+
+                <div class="usuarios">
+                    <div class="usuario-item sidenavIcones" onclick="settings(this)">
+                        <img src="assets/pessoas.png" class="image contato">
+                        <p class="nome-usuario">Todos</p>
+                        <img class="check contato checked" src="assets/check.png">
+                    </div>
+                
+                    <div class="usuario-item" id="participantes"></div>
+                </div>
+
+                <p class="p1">Escolha a visibilidade:</p>
+
+                <div class="sidenavIcones" id="publica" onclick="settings(this)">
+                    <img src="assets/cadeado-aberto.png" class="image visibilidade">
+                    <p>Pública</p>
+                    <img class="check visibilidade checked" src="assets/check.png">
+                </div>
+                
+                <div class="sidenavIcones" id="privada" onclick="settings(this)">
+                    <img src="assets/cadeado-fechado.png" class="image visibilidade">
+                    <p>Privada</p>
+                    <img class="check visibilidade hidden" src="assets/check.png">
+                </div> 
+
+                <div class="sidenavIcones fecharNav">
+                    <button class="buttonNav" onclick="abrirNav(); configurarVisualizacao()">Confirmar</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer class="btt-bar">
+            <div class="mensagem-campo">
+                <input class="escrever" placeholder="Escreva aqui..." id="msg"></input>
+                <span class="visualizacao">Enviando para Todos (público)</span>
+            </div>
+
+            <button id="botaoEnviar">
+                <img src="assets/enviar.png" class="enviar" onclick="enviarMensagem()">
+            </button>
+
+        </footer>
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
