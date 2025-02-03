@@ -24,5 +24,10 @@ Para utilizar a API, é necessário gerar um **UUID** e definir na variável `ch
    ```js
    const chave_API = "INSIRA_SEU_ID";
 
+## 📱 Preview
+![Chat UOL 1](https://github.com/user-attachments/assets/92f369c1-f443-47a9-8002-f86e7d896da4)
+![Chat UOL 2](https://github.com/user-attachments/assets/f61da8ac-4b3f-465a-88d6-92d97fc5f2c8)
+![Chat UOL 3](https://github.com/user-attachments/assets/ae89c3da-4a48-4446-968e-e63517c9d63e)
+
 ## 📄 Licença  
 🛑 **Este projeto é apenas para fins educacionais.**  
